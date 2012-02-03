@@ -34,7 +34,10 @@ module Geocoder
         # exceptions that should not be rescued by default
         # (if you want to implement custom error handling);
         # supports SocketError and TimeoutError
-        [:always_raise, []]
+        [:always_raise, []],
+
+        # Base URL of the Nominatim service
+        [:nominatim_base_url, "http://nominatim.openstreetmap.org/"]
       ]
     end
 
